@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: ecocode-backend
+    env: docker
+    rootDir: backend
+    plan: free
+    envVars:
+      - key: MISTRAL_API_KEY
+        sync: false # You will need to set this in the Render Dashboard
